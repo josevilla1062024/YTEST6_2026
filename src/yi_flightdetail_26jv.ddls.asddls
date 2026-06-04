@@ -52,5 +52,5 @@ define view entity YI_FlightDetail_26JV
       _Connection
 }
 where
-  FlightDate <= $session.system_date
-  and CurrencyCode = $parameters.P_TargetCurrency
+  FlightDate <= $session.system_date and 
+  CurrencyCode = $parameters.P_TargetCurrency

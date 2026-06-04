@@ -4,6 +4,8 @@
 @Metadata.ignorePropagatedAnnotations: true
 define view entity YI_Flight_26JV 
 as select from /dmo/flight
+association [0..1] to I_Currency as _Currency
+on $projection.CurrencyCode = _Currency.Currency
 {
     key carrier_id as CarrierId,
     key connection_id as ConnectionId,
@@ -13,5 +15,6 @@ as select from /dmo/flight
     currency_code as CurrencyCode,
     plane_type_id as PlaneTypeId,
     seats_max as SeatsMax,
-    seats_occupied as SeatsOccupied
+    seats_occupied as SeatsOccupied,
+    _Currency
 }

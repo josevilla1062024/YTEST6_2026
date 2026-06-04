@@ -1,0 +1,9 @@
+@EndUserText.label: 'CDS role for YI_Flight_26JV'
+@MappingRole: true
+define role YI_FLIGHT_26JV {
+grant select on YI_FLIGHT_26JV
+//where ( CarrierId ) = aspect pfcg_auth( s_carrid, carrid, ACTVT = '03' )
+//where CarrierId   = 'LH'
+//and ConnectionId like '04%'
+;
+}
