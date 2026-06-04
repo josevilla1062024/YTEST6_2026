@@ -1,0 +1,7 @@
+@Metadata.layer: #CORE
+@EndUserText.label: 'Flight details of current flights'
+annotate entity YI_FlightDetail_26JV with
+{
+  @EndUserText.label: 'Flight fully booked'
+  FlightOccupied;
+}

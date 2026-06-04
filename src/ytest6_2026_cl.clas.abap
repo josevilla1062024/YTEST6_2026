@@ -34,6 +34,7 @@ CLASS ytest6_2026_cl IMPLEMENTATION.
 
     lv_test = 'B'.
 
+
     CASE lv_test.
       WHEN 'A'.
         out->write( |user { lv_first_name }| ).

@@ -2,6 +2,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Flight detail'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 @ObjectModel.usageType:{
 serviceQuality: #X,
 sizeCategory: #S,
