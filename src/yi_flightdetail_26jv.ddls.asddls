@@ -30,6 +30,11 @@ define view entity YI_FlightDetail_26JV
 
       SeatsMax - SeatsOccupied as SeatsFree,
 
+      //@ObjectModel.virtualElement: true
+      @ObjectModel.virtualElementCalculatedBy:
+      'ABAP:YCL_FLIGHTDETAIL_CAL_EXIT_26JV'
+      cast ( '' as text20 )    as FlightDateWeekday,
+
       case SeatsOccupied
       when SeatsMax
       then 'X'
@@ -45,7 +50,7 @@ define view entity YI_FlightDetail_26JV
       target_currency => $parameters.P_TargetCurrency,
       exchange_rate_date => FlightDate
       )                        as PriceInTargetCurrency,
-      
+
 
       //      cast($parameters.P_TargetCurrency as vdm_v_target_currency preserving type)         as TargetCurrency,
 
@@ -53,5 +58,5 @@ define view entity YI_FlightDetail_26JV
       _Connection
 }
 where
-  FlightDate <= $session.system_date and 
-  CurrencyCode = $parameters.P_TargetCurrency
+      FlightDate   <= $session.system_date
+  and CurrencyCode = $parameters.P_TargetCurrency

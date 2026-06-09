@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Grupo de funcion de pruebas</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LYFG_TEST_26JVTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLYFG_TEST_26JV</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>YFM_GET_WEEKDAY_NAME_26JV</FUNCNAME>
+     <SHORT_TEXT>Modulo de funcion de pruebas</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DATE</PARAMETER>
+       <DEFAULT>&apos;00000000&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>D</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LANGUAGE</PARAMETER>
+       <DBFIELD>SY-LANGU</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WEEKDAY_NUMBER</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>C</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LANGU_BACK</PARAMETER>
+       <DBFIELD>SY-LANGU</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>LONGTEXT</PARAMETER>
+       <TYP>TEXT20</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>SHORTTEXT</PARAMETER>
+       <TYP>TEXT20</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DATE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LANGUAGE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WEEKDAY_NUMBER</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LANGU_BACK</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LONGTEXT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SHORTTEXT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
