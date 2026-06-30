@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exponer CDS'
+define service YSD_ART_001_26JV {
+  expose YCDS_ART_001_26JV;
+}
