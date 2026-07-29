@@ -1,0 +1,60 @@
+managed implementation in class YBP_R_YFLIGHT_26JV unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for YR_YFLIGHT_26JV alias Flight
+persistent table YFLIGHT_26JV
+extensible
+draft table YFLIGHT_26JV_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   CarrierID,
+   ConnectionID,
+   FlightDate;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   CarrierID,
+   ConnectionID,
+   FlightDate;
+
+
+  create;
+  update;
+  delete;
+
+  validation validatePrice on save { create; field Price; }
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for YFLIGHT_26JV corresponding extensible
+  {
+    CarrierID = CARRIER_ID;
+    ConnectionID = CONNECTION_ID;
+    FlightDate = FLIGHT_DATE;
+    Price = PRICE;
+    CurrencyCode = CURRENCY_CODE;
+    PlaneTypeID = PLANE_TYPE_ID;
+    SeatsMax = SEATS_MAX;
+    SeatsOccupied = SEATS_OCCUPIED;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}

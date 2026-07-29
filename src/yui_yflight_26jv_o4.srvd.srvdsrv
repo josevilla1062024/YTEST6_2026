@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for YC_YFLIGHT_26JV'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'YC_YFLIGHT_26JV'
+  }
+}
+define service YUI_YFLIGHT_26JV_O4 provider contracts odata_v4_ui {
+  expose YC_YFLIGHT_26JV as Flight;
+}

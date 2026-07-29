@@ -1,0 +1,6 @@
+@EndUserText.label: 'YC_YFLIGHT_26JV'
+@MappingRole: true
+define role YC_YFLIGHT_26JV {
+  grant select on YC_YFLIGHT_26JV
+  where INHERITING CONDITIONS FROM ENTITY YR_YFLIGHT_26JV REPLACING { ROOT WITH _BaseEntity };
+}

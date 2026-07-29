@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>YS4D400_26JV</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Flight number &amp;1 &amp;2 already exists</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Airline &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Departure and destination airports mutb not be the same</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>The value is negative or equals zero</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>
