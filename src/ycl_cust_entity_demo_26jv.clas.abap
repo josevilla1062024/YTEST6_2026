@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ycl_cust_entity_demo_26jv IMPLEMENTATION.
+CLASS YCL_CUST_ENTITY_DEMO_26JV IMPLEMENTATION.
 
 
   METHOD if_rap_query_provider~select.
@@ -90,5 +90,4 @@ CLASS ycl_cust_entity_demo_26jv IMPLEMENTATION.
     ENDTRY.
 
   ENDMETHOD.
-
 ENDCLASS.

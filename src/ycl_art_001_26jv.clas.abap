@@ -20,7 +20,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_art_001_26jv IMPLEMENTATION.
+CLASS YCL_ART_001_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA: lti_articulo TYPE gtyd_articulo.
@@ -89,5 +91,4 @@ CLASS ycl_art_001_26jv IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

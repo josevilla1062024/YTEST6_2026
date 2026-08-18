@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0002_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0002_26JV IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -42,5 +43,4 @@ CLASS ycl_s4d401_0002_26jv IMPLEMENTATION.
     out->write( |---- Cargo Flight Details ----| ).
     out->write( lo_flight->get_description(  ) ).
   ENDMETHOD.
-
 ENDCLASS.

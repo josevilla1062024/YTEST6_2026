@@ -12,12 +12,12 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d400_0001_26jv IMPLEMENTATION.
+CLASS YCL_S4D400_0001_26JV IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
     out->write( 'Hello World' ).
 
   ENDMETHOD.
-
 ENDCLASS.

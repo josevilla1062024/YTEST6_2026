@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0022_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0022_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 
@@ -53,5 +55,4 @@ DATA text TYPE string      VALUE ` SAP BTP,   ABAP Environment  `.
 
 
   ENDMETHOD.
-
 ENDCLASS.

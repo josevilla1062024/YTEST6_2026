@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0006_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0006_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DATA(flights) = lcl_data=>get_flights(  ).
@@ -27,5 +29,4 @@ CLASS ycl_s4d401_0006_26jv IMPLEMENTATION.
     ).
 
   ENDMETHOD.
-
 ENDCLASS.

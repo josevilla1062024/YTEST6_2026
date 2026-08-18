@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d400_0006_26jv IMPLEMENTATION.
+CLASS YCL_S4D400_0006_26JV IMPLEMENTATION.
 
 
  METHOD if_oo_adt_classrun~main.
@@ -46,6 +46,4 @@ CLASS ycl_s4d400_0006_26jv IMPLEMENTATION.
     out->write( output ).
 
   ENDMETHOD.
-
-
 ENDCLASS.

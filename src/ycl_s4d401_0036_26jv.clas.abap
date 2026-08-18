@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0036_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0036_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     CONSTANTS c_carrier_id TYPE /dmo/carrier_id VALUE 'LH'.
@@ -40,5 +42,4 @@ CLASS ycl_s4d401_0036_26jv IMPLEMENTATION.
     ENDTRY.
 
   ENDMETHOD.
-
 ENDCLASS.

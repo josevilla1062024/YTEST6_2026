@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d400_0012_26jv IMPLEMENTATION.
+CLASS YCL_S4D400_0012_26JV IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -48,6 +48,4 @@ CLASS ycl_s4d400_0012_26jv IMPLEMENTATION.
     APPEND connection TO connections.
 
   ENDMETHOD.
-
-
 ENDCLASS.

@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0043_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0043_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 
@@ -55,5 +57,4 @@ CLASS ycl_s4d401_0043_26jv IMPLEMENTATION.
     out->write( flights ).
 
   ENDMETHOD.
-
 ENDCLASS.

@@ -20,7 +20,8 @@ ENDCLASS.
 
 
 
-CLASS ycx_sadl_exit_26jv IMPLEMENTATION.
+CLASS YCX_SADL_EXIT_26JV IMPLEMENTATION.
+
 
   METHOD constructor ##ADT_SUPPRESS_GENERATION.
     super->constructor(
@@ -33,5 +34,4 @@ CLASS ycx_sadl_exit_26jv IMPLEMENTATION.
       if_t100_message~t100key = textid.
     ENDIF.
   ENDMETHOD.
-
 ENDCLASS.

@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d400_0003_26jv IMPLEMENTATION.
+CLASS YCL_S4D400_0003_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 * Example 1: Local Types
@@ -67,5 +69,4 @@ CLASS ycl_s4d400_0003_26jv IMPLEMENTATION.
 *    out->write(  12345.67                  ).
 
   ENDMETHOD.
-
 ENDCLASS.

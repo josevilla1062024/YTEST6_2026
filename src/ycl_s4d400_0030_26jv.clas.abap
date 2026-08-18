@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d400_0030_26jv IMPLEMENTATION.
+CLASS YCL_S4D400_0030_26JV IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 *Copia de clase zcl_01_copy
@@ -30,5 +31,4 @@ CLASS ycl_s4d400_0030_26jv IMPLEMENTATION.
     ENDTRY.
 
   ENDMETHOD.
-
 ENDCLASS.

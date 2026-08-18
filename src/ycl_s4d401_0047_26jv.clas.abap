@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0047_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0047_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 * Execute this class using Profile As->ABAP Application
@@ -27,5 +29,4 @@ CLASS ycl_s4d401_0047_26jv IMPLEMENTATION.
     out->write( 'Done' ).
 
   ENDMETHOD.
-
 ENDCLASS.

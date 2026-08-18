@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS ycl_flightdetail_cal_exit_26jv IMPLEMENTATION.
+CLASS YCL_FLIGHTDETAIL_CAL_EXIT_26JV IMPLEMENTATION.
+
 
   METHOD if_sadl_exit_calc_element_read~calculate.
 
@@ -51,6 +52,7 @@ CLASS ycl_flightdetail_cal_exit_26jv IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD if_sadl_exit_calc_element_read~get_calculation_info.
 
     IF iv_entity <> 'YI_FLIGHTDETAIL_26JV'.
@@ -75,5 +77,4 @@ CLASS ycl_flightdetail_cal_exit_26jv IMPLEMENTATION.
     ENDLOOP.
 
   ENDMETHOD.
-
 ENDCLASS.

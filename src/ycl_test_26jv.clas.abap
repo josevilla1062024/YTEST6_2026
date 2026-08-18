@@ -11,7 +11,8 @@ ENDCLASS.
 
 
 
-CLASS ycl_test_26jv IMPLEMENTATION.
+CLASS YCL_TEST_26JV IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -44,5 +45,4 @@ CLASS ycl_test_26jv IMPLEMENTATION.
     out->write( r_result ).
 
   ENDMETHOD.
-
 ENDCLASS.

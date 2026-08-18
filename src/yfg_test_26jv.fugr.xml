@@ -4,7 +4,6 @@
   <asx:values>
    <AREAT>Grupo de funcion de pruebas</AREAT>
    <INCLUDES>
-    <SOBJ_NAME>LYFG_TEST_26JVTOP</SOBJ_NAME>
     <SOBJ_NAME>SAPLYFG_TEST_26JV</SOBJ_NAME>
    </INCLUDES>
    <FUNCTIONS>

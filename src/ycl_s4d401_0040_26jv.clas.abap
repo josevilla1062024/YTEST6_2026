@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0040_26jv IMPLEMENTATION.
+CLASS YCL_S4D401_0040_26JV IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
 
@@ -35,5 +37,4 @@ SELECT FROM /dmo/connection
 
 
   ENDMETHOD.
-
 ENDCLASS.
