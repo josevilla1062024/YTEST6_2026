@@ -1,0 +1,4 @@
+@EndUserText.label: 'Simple Flight Report Service'
+define service YI_CONNECTION_SD_26JV {
+  expose YI_CONNECTION_26JV;
+}
