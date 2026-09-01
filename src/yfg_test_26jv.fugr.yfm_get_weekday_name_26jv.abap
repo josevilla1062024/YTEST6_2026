@@ -1,5 +1,5 @@
-FUNCTION yfm_get_weekday_name_26jv.
-*"----------------------------------------------------------------------
+FUNCTION YFM_GET_WEEKDAY_NAME_26JV.
+*"--------------------------------------------------------------------
 *"*"Local Interface:
 *"  IMPORTING
 *"     VALUE(DATE) TYPE  D DEFAULT '00000000'
@@ -9,19 +9,10 @@ FUNCTION yfm_get_weekday_name_26jv.
 *"     VALUE(LANGU_BACK) LIKE  SY-LANGU
 *"     VALUE(LONGTEXT) TYPE  TEXT20
 *"     VALUE(SHORTTEXT) TYPE  TEXT20
-*"----------------------------------------------------------------------
-  CASE language.
-    WHEN 'E'.
-      langu_back = sy-langu.
-      longtext = 'Monday'.
-      shorttext = 'MO'.
+*"--------------------------------------------------------------------
 
-    WHEN OTHERS.
-      langu_back = sy-langu.
-      longtext = 'Monday'.
-      shorttext = 'MO'.
 
-  ENDCASE.
+
 
 
 ENDFUNCTION.

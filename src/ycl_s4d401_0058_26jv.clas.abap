@@ -1,19 +1,13 @@
-CLASS ycl_s4d401_0058_26jv DEFINITION
-  PUBLIC
-  FINAL
-  CREATE PUBLIC .
+class YCL_S4D401_0058_26JV definition
+  public
+  create private .
 
-  PUBLIC SECTION.
-  INTERFACES if_oo_adt_classrun.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+public section.
+protected section.
+private section.
 ENDCLASS.
 
 
 
-CLASS ycl_s4d401_0058_26jv IMPLEMENTATION.
-  METHOD if_oo_adt_classrun~main.
-
-  ENDMETHOD.
-
+CLASS YCL_S4D401_0058_26JV IMPLEMENTATION.
 ENDCLASS.

@@ -1,8 +1,6 @@
 class YBP_R_YFLIGHT_26JV definition
   public
-  abstract
-  final
-  for behavior of YR_YFLIGHT_26JV .
+  create private .
 
 public section.
 protected section.

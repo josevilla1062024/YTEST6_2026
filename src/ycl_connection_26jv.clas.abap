@@ -1,7 +1,13 @@
-CLASS ycl_connection_26jv DEFINITION  PUBLIC FINAL CREATE PUBLIC FOR TESTING.
-  PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
+class YCL_CONNECTION_26JV definition
+  public
+  create private .
+
+public section.
+protected section.
+private section.
 ENDCLASS.
-CLASS ycl_connection_26jv  IMPLEMENTATION.
+
+
+
+CLASS YCL_CONNECTION_26JV IMPLEMENTATION.
 ENDCLASS.
