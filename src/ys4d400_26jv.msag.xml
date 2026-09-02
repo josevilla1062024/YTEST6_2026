@@ -29,6 +29,24 @@
     <T100>
      <SPRSL>E</SPRSL>
      <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Connection &amp;1 &amp;2 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Carrier &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>You are not authorized to display carrier &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>YS4D400_26JV</ARBGB>
      <MSGNR>101</MSGNR>
      <TEXT>The value is negative or equals zero</TEXT>
     </T100>
