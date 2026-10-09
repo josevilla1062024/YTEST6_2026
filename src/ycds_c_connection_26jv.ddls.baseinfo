@@ -3,12 +3,11 @@
 {
 "FROM":
 [
-"YTB_EMPLOY_26JV"
+"/DMO/I_CONNECTION_R",
+"/DMO/I_FLIGHT_R"
 ],
 "ASSOCIATED":
-[
-"YCDS_R_DEPARTMENT_26JV"
-],
+[],
 "BASE":
 [],
 "ANNO_REF":

@@ -9,6 +9,8 @@
 @Metadata.ignorePropagatedAnnotations: true
 define view entity YCDS_R_Employee_26JV
   as select from ytb_employ_26jv
+  association [1..1] to YCDS_R_DEPARTMENT_26JV as _Department
+  on _Department.Id = $projection.DepartmentId
 {
   key employee_id           as EmployeeId,
       first_name            as FirstName,
@@ -24,5 +26,6 @@ define view entity YCDS_R_Employee_26JV
       created_at            as CreatedAt,
       local_last_changed_by as LocalLastChangedBy,
       local_last_changed_at as LocalLastChangedAt,
-      last_changed_at       as LastChangedAt
+      last_changed_at       as LastChangedAt,
+      _Department
 }
