@@ -2,7 +2,7 @@ managed implementation in class ybp_dd_r_customer_travel_26jv unique;
 strict ( 2 );
 with draft;
 
-define behavior for YDD_R_CUSTOMER_TRAVEL_26JV //alias <alias_name>
+define behavior for YDD_R_CUSTOMER_TRAVEL_26JV alias CustomerTravel
 persistent table ycusto_user_26jv
 draft table YCUS_D_USER_26JV
 lock master
@@ -16,9 +16,13 @@ authorization master ( global, instance )
 
   field ( numbering : managed, readonly ) CustomerUuid;
   field ( mandatory ) CustomerId ;
-  field ( readonly ) Description ;
+  field ( readonly ) Description, FlightDate, CurrencyCode, OverallStatus ;
+  field ( features : instance )           Price;
 
-  action ( features : instance, authorization : update ) acceptClients result [1] $self ;
+  action ( features : instance, authorization : update ) acceptClients
+  parameter YDD_AE_CUSTOMER_TRAVEL_26JV
+  result [1] $self ;
+
   action ( features : instance, authorization : update ) rejectClients result [1] $self ;
 
   validation validateCustomer on save { create; field CustomerId ; }
@@ -42,6 +46,10 @@ authorization master ( global, instance )
   {
     CustomerId = customer_id;
     Description = description;
+    FlightDate    = flight_date;
+    Price         = price;
+    CurrencyCode  = currency_code;
+    OverallStatus = overall_status;
   }
 
 }
