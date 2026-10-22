@@ -1,0 +1,19 @@
+interface;
+use draft;
+
+define behavior for YDD_I_CUSTOMER_TRAVEL_26JV alias YDD_R_CUSTOMER_TRAVEL_26JV
+{
+  use create;
+  use update;
+  use delete;
+
+  use action acceptClients;
+  use action rejectClients;
+  use action validateCustomerFormat;
+
+  use action Resume;
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Prepare;
+}
