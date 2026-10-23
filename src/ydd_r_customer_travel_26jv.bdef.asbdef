@@ -16,7 +16,8 @@ authorization master ( global, instance )
 
   field ( numbering : managed, readonly ) CustomerUuid;
   field ( mandatory ) CustomerId ;
-  field ( readonly ) Description, FlightDate, CurrencyCode, OverallStatus ;
+//  field ( readonly ) Description, FlightDate, CurrencyCode, OverallStatus ;
+  field ( readonly ) Description, FlightDate, OverallStatus ;
   field ( features : instance )           Price;
 
   action ( features : instance, authorization : update ) acceptClients
@@ -26,7 +27,11 @@ authorization master ( global, instance )
   action ( features : instance, authorization : update ) rejectClients result [1] $self ;
 
   validation validateCustomer on save { create; field CustomerId ; }
+
   determination setDescription on save { create; }
+  determination setStatus on modify { create; field OverallStatus, FlightDate; }
+
+  internal action updateFlightDate;
 
   determine action validateCustomerFormat { validation validateCustomer ; }
   side effects
