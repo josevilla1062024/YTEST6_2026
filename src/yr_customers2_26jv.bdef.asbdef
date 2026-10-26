@@ -1,0 +1,59 @@
+managed implementation in class YBP_R_CUSTOMERS2_26JV unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for YR_CUSTOMERS2_26JV alias YrCustomers226jv
+persistent table YCUSTOMERS2_26JV
+extensible
+draft table YCUSTOMERS2_D_26
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   FlightDate,
+   CustomerID;
+
+  field ( readonly )
+   CustomerUUID,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   CustomerUUID;
+
+  field ( readonly : update )
+   FlightDate,
+   CustomerID;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for YCUSTOMERS2_26JV corresponding extensible
+  {
+    CustomerUUID = CUSTOMER_UUID;
+    FlightDate = FLIGHT_DATE;
+    CustomerID = CUSTOMER_ID;
+    Description = DESCRIPTION;
+    Price = PRICE;
+    CurrencyCode = CURRENCY_CODE;
+    OverallStatus = OVERALL_STATUS;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalLastChangedBy = LOCAL_LAST_CHANGED_BY;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}

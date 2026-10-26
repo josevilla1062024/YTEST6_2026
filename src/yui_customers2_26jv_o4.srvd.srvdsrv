@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for YC_CUSTOMERS2_26JV'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'YC_CUSTOMERS2_26JV'
+  }
+}
+define service YUI_CUSTOMERS2_26JV_O4 provider contracts odata_v4_ui {
+  expose YC_CUSTOMERS2_26JV;
+}
