@@ -17,6 +17,8 @@ CLASS ycl_virt_emem_sadl_price_26jv IMPLEMENTATION.
     " Declaration of necessary tables
     DATA lt_original_data TYPE STANDARD TABLE OF ydd_c_customer_travel_26jv WITH DEFAULT KEY.
 
+*hola mundo
+
     lt_original_data = CORRESPONDING #( it_original_data ).
 
     " Iterate through projection records to set values to Virtual Elements
