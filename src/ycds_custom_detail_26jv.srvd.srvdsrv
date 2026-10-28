@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition Custom Detail'
+define service YCDS_CUSTOM_DETAIL_26JV {
+  expose YCDS_CUSTOM_DETAIL_26JV as CustomDetail;
+}
