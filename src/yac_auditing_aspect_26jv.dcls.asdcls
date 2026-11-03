@@ -1,0 +1,10 @@
+define accesspolicy YAC_AUDITING_ASPECT_26JV {
+    @EndUserText.label: 'Access Control - Auditing Aspect'
+    define aspect YAC_AUDITING_ASPECT_26JV as
+        select from YCDS_AUDITING_ASPECT_26JV with user element CreatedBy
+            {
+                CreatedBy,
+                CustomerName
+            }
+            
+}

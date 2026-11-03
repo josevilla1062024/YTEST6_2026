@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Control - User Aspect'
+@MappingRole: true
+define role YAC_USER_ASPECT_26JV {
+grant select on YCDS_AUDITING_ASPECT_2_26JV
+    where CreatedBy = aspect user;                        
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Control - Literal Access of Airport'
+@MappingRole: true
+define role YAC_LITERAL_ACCESS_26JV {
+    grant select on YCDS_AIRPORT_1_26JV
+    where Country = 'US';                       
+}

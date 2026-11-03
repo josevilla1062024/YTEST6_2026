@@ -1,0 +1,11 @@
+@Metadata.layer: #INDUSTRY
+annotate entity YCDS_CUSTOMER_META_26JV with
+{
+  @UI.dataFieldDefault: [{ importance: #HIGH }]
+  @UI.lineItem: [{ position: 10, type: #FOR_ACTION, dataAction: 'get_customer' }]
+  CustomerId;
+
+  @UI.dataFieldDefault: [{ importance: #HIGH }]
+  @UI.lineItem: [{ position: 20, type: #FOR_ACTION, dataAction: 'get_customer' }]
+  City;
+}

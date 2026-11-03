@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access Control - Custom Aspect'
+@MappingRole: true
+define role YAC_CUSTOM_ASPECT_26JV {
+grant select on YCDS_AUDITING_ASPECT_26JV
+    where (CreatedBy, CustomerName) = aspect YAC_AUDITING_ASPECT_26JV
+      and InvAmount > 100;                        
+}

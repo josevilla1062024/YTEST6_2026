@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Control PFCG - Flight Type'
+@MappingRole: true
+define role YAC_PFCG_FLIGHT_26JV {
+grant select on YCDS_AIRPORT_4_26JV
+    where (FlightType) = aspect pfcg_auth( YAOFLY26JV, AFFLYT26JV, ACTVT = '03' );
+}

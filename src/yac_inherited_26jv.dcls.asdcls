@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access Control - Inherited Access Control'
+@MappingRole: true
+define role YAC_INHERITED_26JV {
+grant select on YCDS_AIRPORT_3_26JV
+    where AirportId = 'MUC'
+    and inheriting conditions from entity YCDS_AIRPORT_2_26JV;                           
+}

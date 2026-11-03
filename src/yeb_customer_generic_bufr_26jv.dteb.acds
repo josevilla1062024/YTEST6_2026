@@ -1,0 +1,3 @@
+define view entity buffer on YCDS_CUSTOMER_BUFFER_26JV
+  layer industry
+  type none

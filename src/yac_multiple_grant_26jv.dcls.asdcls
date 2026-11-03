@@ -1,0 +1,9 @@
+@EndUserText.label: 'Access Control - Multiple Grant'
+@MappingRole: true
+define role YAC_MULTIPLE_GRANT_26JV {
+grant select on YCDS_AIRPORT_1_26JV
+    where Country = 'US' OR Country = 'DE';
+
+  grant select on YCDS_AIRPORT_2_26JV
+    where Country = 'US' OR Country = 'DE';                        
+}
