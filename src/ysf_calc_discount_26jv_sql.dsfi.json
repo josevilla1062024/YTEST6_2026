@@ -1,0 +1,14 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "función escalar con condición de tipo referenciado",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "scalarFunctionName": "YSF_CALC_DISCOUNT_26JV",
+  "engine": "sqlEngine",
+  "sqlProperties": {
+    "amdpReference": "ycl_calc_discount_26jv=>get_discount",
+    "autoExposedInSqlServices": false
+  }
+}

@@ -1,0 +1,2 @@
+@EndUserText.label: 'Type - CDS Type sale status'
+define type YTY_CDS_ST_ORDER_26JV : abap.char(10);

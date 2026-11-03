@@ -1,0 +1,7 @@
+define scalar function YSF_CALC_DISCOUNT_26JV
+  with parameters
+    pClientCucky : abap.cuky,
+    pDiscount    : abap.curr(16,2)
+      with reference type #CUKY
+  returns abap.curr(16,2)
+    with reference type of pDiscount;

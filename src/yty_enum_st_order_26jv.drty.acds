@@ -1,0 +1,13 @@
+@EndUserText.label: 'Type - Enum Type sale status'
+define type YTY_ENUM_ST_ORDER_26JV : abap.char(2) enum
+{
+  draft      = initial;
+  @EndUserText.label: 'Status Processing'
+  processing = '01';
+  @EndUserText.label: 'Status Shipped'
+  shipped    = '02';
+  @EndUserText.label: 'Status Delivered'
+  delivered  = '03';
+  @EndUserText.label: 'Status Cancelled'
+  cancelled  = '04';
+}

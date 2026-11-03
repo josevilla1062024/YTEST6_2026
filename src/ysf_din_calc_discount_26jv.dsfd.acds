@@ -1,0 +1,13 @@
+define scalar function YSF_DIN_CALC_DISCOUNT_26JV
+  with parameters
+    p1 : numeric
+      with reference type [ #CUKY, #UNIT, #CALC, #NONE ],
+    p2 : numeric
+      with reference type [ #CUKY, #UNIT, #CALC, #NONE ]
+  returns abap.dec(16,2)
+    with reference type
+      case
+        when p1: [ reference type of p2 ] then [ reference type of p2 ]
+        when p2: [ reference type of p1 ] then [ reference type of p1 ]
+        else [ #NONE ]
+      end;

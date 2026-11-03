@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Definition Flight Discount'
+define service YSD_FLIGHT_DISCOUNT_26JV {
+  expose YCDS_VIRTUAL_DISCOUNT_26JV;
+  expose YCDS_PROJ_VIRTUAL_DISC_26JV;
+}
